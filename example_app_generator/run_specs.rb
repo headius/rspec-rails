@@ -1,4 +1,4 @@
-run('bin/rspec spec -cfdoc') || abort
+run('bin/rspec spec -cfdoc spec/verify_mailer_preview_path_spec.rb') || abort
 # Ensure we test the issue in-case this isn't the first spec file loaded
 run(
   'bin/rspec --backtrace -cfdoc spec/__verify_fixture_load_order_spec.rb'
