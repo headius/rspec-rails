@@ -23,7 +23,11 @@ RSpec.describe 'Action Mailer railtie hook' do
            IO.popen(ops)
          end
     # Necessary to ignore warnings from Rails code base
-    out =  io.readlines.
+    readlines = io.readlines
+    puts "\n\n\n\n\n\n"
+    puts readlines
+    puts "\n\n\n\n\n\n"
+    out =  readlines.
               reject { |line| line =~ /warning: circular argument reference/ }.
               join.
               chomp
