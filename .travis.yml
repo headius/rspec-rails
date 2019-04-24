@@ -41,8 +41,3 @@ matrix:
         - JRUBY_OPT=--dev
 
   fast_finish: true
-
-branches:
-  only:
-    - master
-    - /^\d+-\d+-maintenance$/
